@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Configurar · Profesor de repaso</title>
+  <link rel="stylesheet" href="/estilos.css">
+  <script type="module" src="/configurar.js"></script>
+</head>
+<body>
+  <header class="cabecera">
+    <div>
+      <h1>Configurar Profesor de repaso</h1>
+      <p class="suave">Solo hace falta la primera vez: crear tu bot de Telegram y pegar aquí su token.</p>
+    </div>
+  </header>
+
+  <main class="configurar">
+    <p id="estado" class="estado" role="status" aria-live="polite">Cargando…</p>
+
+    <section id="pasos" class="panel" hidden>
+      <h2>1. Crea tu bot con BotFather</h2>
+      <p>BotFather es el bot oficial de Telegram para crear bots. Tiene una marca azul de verificado.</p>
+      <ol>
+        <li>Pulsa <strong>Abrir BotFather</strong>. Se abrirá su chat en Telegram (inicia sesión si te lo pide).</li>
+        <li>Envíale <code>/newbot</code>.</li>
+        <li>Te pide un <strong>nombre</strong>: el que verá la gente, por ejemplo <em>Profe de repaso de Ana</em>.</li>
+        <li>Te pide un <strong>nombre de usuario</strong>: tiene que terminar en <code>bot</code>, por ejemplo <em>repaso_ana_bot</em>. Si ya está cogido, prueba otro.</li>
+        <li>Te responde con un mensaje que incluye el <strong>token</strong>, un texto del tipo <code>123456789:AAH…</code>. Cópialo entero.</li>
+      </ol>
+      <div class="acciones izquierda">
+        <button type="button" class="boton principal" id="abrir-botfather">Abrir BotFather</button>
+      </div>
+
+      <h2>2. Pega aquí el token</h2>
+      <form id="formulario" class="formulario">
+        <label for="token">Token del bot</label>
+        <div class="campo">
+          <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="123456789:AAH…" required>
+          <button type="button" class="boton secundario" id="ver-token" aria-pressed="false">Ver</button>
+        </div>
+        <p class="ayuda">El token es como la contraseña de tu bot: no se lo pases a nadie. Se guarda cifrado en este ordenador.</p>
+        <div class="acciones izquierda">
+          <button type="submit" class="boton principal" id="guardar">Guardar y conectar</button>
+        </div>
+        <p id="error" class="error-formulario" role="alert" hidden></p>
+      </form>
+    </section>
+
+    <section id="listo" class="panel" hidden>
+      <h2>✅ Bot listo</h2>
+      <p id="listo-texto"></p>
+      <p>Se abrirá su chat en Telegram: pulsa <strong>Iniciar</strong> y te mostrará las normas de uso y el menú.</p>
+      <div class="acciones izquierda">
+        <a class="boton principal" id="abrir-bot" target="_blank" rel="noopener noreferrer">Abrir mi bot</a>
+      </div>
+      <p class="ayuda">Ya puedes cerrar esta página. La próxima vez que abras el programa irá directo a tu bot.</p>
+    </section>
+  </main>
+</body>
+</html>

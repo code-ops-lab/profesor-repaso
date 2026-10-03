@@ -1,0 +1,16 @@
+node_modules/
+dist/
+ejecutable/
+.env
+.env.*
+!.env.example
+*.tmp
+.runtime/
+datos/pdfs/
+datos/alumnos.json
+datos/planes.json
+datos/fichas.json
+datos/asignaciones.json
+datos/cache.json
+datos/registro.json
+datos/sesiones.json

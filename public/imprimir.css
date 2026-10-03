@@ -1,0 +1,12 @@
+/* Al imprimir la propia web (Ctrl+P): solo la lista del día, sin interfaz. */
+@media print {
+  @page { margin: 15mm; }
+  body { background: #fff; padding: 0; font-size: 12pt; }
+  body::before { display: none; }
+  .detalle { background: none; border: 0; padding: 0; }
+  .saltar, .estado, .calendario, .visor, .acciones, dialog { display: none !important; }
+  .contenido { display: block; }
+  .cabecera { background: none; color: #000; padding: 0 0 8pt; border-radius: 0; border-bottom: 1px solid #999; margin-bottom: 12pt; }
+  .cabecera .suave, .progreso, .progreso strong { color: #333; }
+  .ficha { border: 1px solid #ccc; page-break-inside: avoid; break-inside: avoid; }
+}

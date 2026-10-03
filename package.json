@@ -1,0 +1,25 @@
+{
+  "name": "profesor-repaso",
+  "version": "1.0.0",
+  "description": "Bot de Telegram + web local que planifica e imprime fichas PDF de repaso para primaria",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file-if-exists=.env dist/servidor.js",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "exe": "node scripts/exe.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "_estado": "PENDIENTE DE REVISIÓN: base orientativa del currículo de primaria en España. Revísala y ajústala a lo que trabaja el colegio.",
+  "asignaturas": {
+    "mat": "Matemáticas",
+    "len": "Lengua",
+    "cna": "Ciencias Naturales",
+    "cso": "Ciencias Sociales",
+    "ing": "Inglés"
+  },
+  "temas": {
+    "1": {
+      "mat": ["Números hasta el 99", "Sumas sin llevar", "Restas sin llevar", "Decenas y unidades", "Formas geométricas", "Medidas: largo y corto", "Problemas sencillos"],
+      "len": ["Vocales", "Consonantes", "Sílabas", "Lectoescritura", "Comprensión lectora", "Mayúsculas y punto"],
+      "cna": ["El cuerpo humano", "Los sentidos", "Los animales", "Las plantas", "Hábitos saludables"],
+      "cso": ["La familia", "El colegio", "La casa", "Las estaciones del año", "Los oficios"],
+      "ing": ["Colours", "Numbers 1-10", "Animals", "Family", "School objects"]
+    },
+    "2": {
+      "mat": ["Números hasta el 999", "Sumas llevando", "Restas llevando", "Iniciación a la multiplicación", "El reloj", "El dinero", "Problemas de suma y resta"],
+      "len": ["Comprensión lectora", "Ortografía: c/qu, g/gu", "Sustantivos", "Adjetivos", "Singular y plural", "Dictados"],
+      "cna": ["Los animales vertebrados", "Las plantas", "El agua", "La alimentación", "Materiales y objetos"],
+      "cso": ["El barrio y la localidad", "Los medios de transporte", "El paisaje", "El tiempo atmosférico", "El paso del tiempo"],
+      "ing": ["Numbers 1-20", "Food", "Clothes", "Body parts", "Days of the week"]
+    },
+    "3": {
+      "mat": ["Números hasta el 9999", "Tablas de multiplicar", "Multiplicación", "Iniciación a la división", "Fracciones sencillas", "Medidas de longitud", "Problemas de dos operaciones"],
+      "len": ["Comprensión lectora", "Ortografía: b/v", "Sustantivos y adjetivos", "El verbo", "Sinónimos y antónimos", "Redacción"],
+      "cna": ["Los seres vivos", "Animales vertebrados e invertebrados", "Las plantas", "La salud", "Materia y energía"],
+      "cso": ["El universo y el sistema solar", "El relieve", "El agua en la Tierra", "La localidad y el municipio", "La historia y el tiempo"],
+      "ing": ["Animals", "Daily routine", "The house", "Present simple", "Weather"]
+    },
+    "4": {
+      "mat": ["Números de hasta seis cifras", "Multiplicación por varias cifras", "División", "Fracciones", "Números decimales", "Geometría: ángulos y polígonos", "Problemas"],
+      "len": ["Comprensión lectora", "Ortografía: h, g/j, ll/y", "Acentuación", "Clases de palabras", "El verbo: tiempos verbales", "Redacción"],
+      "cna": ["El cuerpo humano: funciones", "Los ecosistemas", "Clasificación de los seres vivos", "Materia y sus propiedades", "Máquinas sencillas"],
+      "cso": ["La Tierra y los mapas", "El clima", "La población", "La Prehistoria", "La Edad Antigua"],
+      "ing": ["Present continuous", "Can / can't", "Jobs", "Food and drink", "Prepositions of place"]
+    },
+    "5": {
+      "mat": ["Números grandes", "Operaciones combinadas", "Fracciones", "Decimales", "Porcentajes", "Áreas y perímetros", "Problemas"],
+      "len": ["Comprensión lectora", "Acentuación: diptongos e hiatos", "Sujeto y predicado", "Conjugación verbal", "Tipos de textos", "Redacción"],
+      "cna": ["Aparatos del cuerpo humano", "La célula", "Ecosistemas", "Energía", "Electricidad y magnetismo"],
+      "cso": ["El relieve de España", "Los ríos de España", "Organización territorial", "La Edad Media", "La economía"],
+      "ing": ["Past simple", "Comparatives", "Daily routine", "Travel", "There was / there were"]
+    },
+    "6": {
+      "mat": ["Potencias y raíces", "Múltiplos y divisores", "Fracciones", "Decimales y porcentajes", "Proporcionalidad", "Geometría y volumen", "Estadística y probabilidad", "Problemas"],
+      "len": ["Comprensión lectora", "Acentuación", "Análisis sintáctico", "Clases de palabras", "Tipos de textos", "Redacción"],
+      "cna": ["Funciones vitales", "Reproducción", "La salud", "Materia y energía", "La luz y el sonido"],
+      "cso": ["Geografía de Europa", "La Unión Europea", "Edad Moderna", "Edad Contemporánea", "La Constitución"],
+      "ing": ["Future: will / going to", "Superlatives", "Present perfect", "Past continuous", "Reading comprehension"]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "_nota": "Opcional. Dominios de confianza que se priorizan en la búsqueda, p. ej. \"ejemplo.es\". Déjalo vacío para buscar en toda la web.",
+  "dominios": []
+}

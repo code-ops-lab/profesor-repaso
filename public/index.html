@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Profesor de repaso</title>
+  <link rel="stylesheet" href="/estilos.css">
+  <link rel="stylesheet" href="/imprimir.css" media="print">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#detalle">Ir a las fichas del día</a>
+
+  <header class="cabecera">
+    <div>
+      <h1 id="titulo">Profesor de repaso</h1>
+      <p id="subtitulo" class="suave"></p>
+    </div>
+    <p id="progreso" class="progreso" hidden></p>
+  </header>
+
+  <p id="estado" class="estado" role="status" aria-live="polite">Cargando…</p>
+
+  <main id="contenido" class="contenido" hidden>
+    <section class="calendario" aria-labelledby="mes-titulo">
+      <div class="calendario-nav">
+        <button type="button" class="boton secundario" id="mes-anterior" aria-label="Mes anterior">Anterior</button>
+        <h2 id="mes-titulo"></h2>
+        <button type="button" class="boton secundario" id="mes-siguiente" aria-label="Mes siguiente">Siguiente</button>
+      </div>
+      <div class="semana" aria-hidden="true">
+        <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+      </div>
+      <div id="rejilla" class="rejilla" role="grid" aria-labelledby="mes-titulo"></div>
+      <p class="leyenda" aria-hidden="true">
+        <span><i class="pendiente"></i>Con fichas por imprimir</span>
+        <span><i class="completo"></i>Todo impreso</span>
+      </p>
+      <div id="resumen" class="resumen"></div>
+    </section>
+
+    <section id="detalle" class="detalle" aria-labelledby="dia-titulo" tabindex="-1">
+      <h2 id="dia-titulo"></h2>
+      <div id="lista"></div>
+
+      <div id="visor" class="visor" hidden>
+        <div class="visor-barra">
+          <p id="visor-titulo" class="visor-titulo"></p>
+          <div class="acciones">
+            <button type="button" class="boton principal" id="visor-imprimir">Imprimir</button>
+            <a class="boton secundario" id="visor-pestana" target="_blank" rel="noopener noreferrer">Abrir en pestaña</a>
+            <button type="button" class="boton secundario" id="visor-cerrar">Cerrar</button>
+          </div>
+        </div>
+        <iframe id="visor-marco" title="Vista del PDF"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="confirmar" aria-labelledby="confirmar-texto">
+    <p id="confirmar-texto">¿Se imprimió bien?</p>
+    <div class="acciones">
+      <button type="button" class="boton principal" value="si" id="confirmar-si">Sí</button>
+      <button type="button" class="boton secundario" value="no" id="confirmar-no">No</button>
+    </div>
+  </dialog>
+</body>
+</html>

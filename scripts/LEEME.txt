@@ -1,0 +1,26 @@
+PROFESOR DE REPASO
+==================
+
+Busca fichas PDF de repaso de primaria, prepara un plan mensual y te deja verlas e imprimirlas
+desde una web con calendario. Se maneja con un bot de Telegram propio.
+
+PRIMERA VEZ
+1. Doble clic en profesor-repaso.exe.
+   Si Windows avisa de "editor desconocido": "Más información" -> "Ejecutar de todas formas".
+2. Se abre en el navegador la página "Configurar Profesor de repaso".
+   Pulsa "Abrir BotFather", envíale /newbot, elige un nombre y un nombre de usuario que termine en "bot".
+3. Copia el token que te da BotFather, pégalo en la página y pulsa "Guardar y conectar".
+4. Se abre el chat de tu bot: pulsa "Iniciar".
+
+USO NORMAL
+- Mientras la ventana negra esté abierta, el bot y la web funcionan. Para parar, ciérrala.
+- El ordenador tiene que estar encendido y con internet.
+- No generes muchos planes seguidos: el buscador gratuito bloquea si recibe muchas búsquedas.
+  Lee las "Normas de uso" que muestra el bot al escribir /start.
+
+TUS DATOS
+- Alumnos, planes y PDF se guardan en la carpeta "datos". Para hacer copia de seguridad, cópiala.
+- El token del bot se guarda cifrado en el archivo ".env". No se lo pases a nadie.
+- Si pasas el programa a otra persona, no incluyas tu ".env" ni tus datos: que cree su propio bot.
+
+Más información en el repositorio del proyecto (README.md).
